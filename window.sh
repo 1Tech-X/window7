@@ -46,7 +46,7 @@ for i in wget qemu-system-i386-headless; do
 		printf "${green} $i is installed\n"
 	else
 		echo ""
-		echo "Installing wget..."
+		echo "Installing packages..."
 		apt install -y $i || {
 			printf "$red"
 			echo ""
