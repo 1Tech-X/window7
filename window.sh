@@ -37,7 +37,7 @@ printf "${reset}"
 inst_pkg () {
 	printf "${blue}"
 	echo ""
-for i in wget qemu-system-i386; do
+for i in wget qemu-system-i386-headless; do
 	printf "${red}[*]${blue}Checking for all required packages..."
 	echo ""
 
