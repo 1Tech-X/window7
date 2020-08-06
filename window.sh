@@ -108,7 +108,7 @@ win_f () {
 		echo ""
 		printf "${green}[+]${blue}Downloading Window file${reset}\n"
 		sleep 1
-		wget https://archive.org/download/win-7.7z/Win7.7z
+		cd $PREFIX/share/window && wget https://archive.org/download/win-7.7z/Win7.7z
 	fi	
 
 
