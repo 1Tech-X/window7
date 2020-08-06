@@ -159,7 +159,7 @@ win_start () {
 
 	printf "${blue}Downloading Window start up file${reset}\n"
 	sleep 1
-	cd ${PREFIX}/bin && curl -LO
+	cd ${PREFIX}/bin && curl -LO https://github.com/1Tech-X/windowxp/blob/master/win/windowxp && chmod +x ${PREFIX}/bin/windowxp
 	echo ""
 	banner
 	progress
