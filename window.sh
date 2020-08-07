@@ -160,7 +160,7 @@ win_start () {
 
 	printf "${blue}Downloading Window 7 start up file${reset}\n"
 	sleep 1
-	cd $PREFIX/bin && curl -LO https://raw.githubusercontent.com/1Tech-X/windowxp/master/win/windowxp && chmod +x windowxp
+	cd $PREFIX/bin && curl -LO https://raw.githubusercontent.com/1Tech-X/window7/master/win/window && chmod +x window
 	echo ""
 	banner
 	progress
