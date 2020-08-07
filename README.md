@@ -1,7 +1,7 @@
 # window 7
 Window 7 for android
 
-<img src='https://github.com/1Tech-X/windowxp/blob/master/win/20200806_143658.jpg' width='350'>
+<img src='https://github.com/1Tech-X/window7/blob/master/win/20200807_162148.jpg' width='350'>
 <hr>
 
 # Requirements Applications
