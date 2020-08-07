@@ -22,13 +22,14 @@ banner () {
 	
 clear
 printf "${blue}"
-printf "░██╗░░░░░░░██╗██╗███╗░░██╗██████╗░░█████╗░░██╗░░░░░░░██╗██╗░░██╗██████╗░\n"
-printf "░██║░░██╗░░██║██║████╗░██║██╔══██╗██╔══██╗░██║░░██╗░░██║╚██╗██╔╝██╔══██╗\n"
-printf "░╚██╗████╗██╔╝██║██╔██╗██║██║░░██║██║░░██║░╚██╗████╗██╔╝░╚███╔╝░██████╔╝\n"
-printf "░░████╔═████║░██║██║╚████║██║░░██║██║░░██║░░████╔═████║░░██╔██╗░██╔═══╝░\n"
-printf "░░╚██╔╝░╚██╔╝░██║██║░╚███║██████╔╝╚█████╔╝░░╚██╔╝░╚██╔╝░██╔╝╚██╗██║░░░░░\n"
-printf "░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝░░░░░\n"
-printf "${red}                         Created by Tech-X${reset}\n"
+printf "██╗    ██╗██╗███╗   ██╗██████╗  ██████╗ ██╗    ██╗ ███████╗\n"
+printf "██║    ██║██║████╗  ██║██╔══██╗██╔═══██╗██║    ██║ ╚════██║\n"
+printf "██║ █╗ ██║██║██╔██╗ ██║██║  ██║██║   ██║██║ █╗ ██║    ██╔╝ \n"
+printf "██║███╗██║██║██║╚██╗██║██║  ██║██║   ██║██║███╗██║   ██╔╝  \n"
+printf "╚███╔███╔╝██║██║ ╚████║██████╔╝╚██████╔╝╚███╔███╔╝   ██║   \n"
+printf " ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝  ╚══╝╚══╝    ╚═╝   \n"
+
+printf "${red}                  Created by Tech-X${reset}\n"
 printf "${reset}"
 }
 
@@ -99,14 +100,14 @@ fi
 win_f () {
 	
         echo ""
-	printf "${red}[*]${blue}Checking For window file${reset}\n"
+	printf "${red}[*]${blue}Checking For window 7 file${reset}\n"
 	sleep 1
 	if [ -f ${WINDOW_F} ]; then
 		echo ""
 		printf "${green}Window is already exist${reset}\n"
 	else
 		echo ""
-		printf "${green}[+]${blue}Downloading Window file${reset}\n"
+		printf "${green}[+]${blue}Downloading Window 7 zip file${reset}\n"
 		sleep 1
 		cd $PREFIX/share/window && wget https://archive.org/download/win-7.7z/Win7.7z
 	fi	
@@ -119,37 +120,37 @@ extract () {
 
 	echo ""
 if [ ! -f $PREFIX/share/window/Win7.qcow2 ]; then
-	printf "${red}[€]${green}Extracting Windowxp zip file....${reset}\n"
+	printf "${red}[€]${green}Extracting Window 7 zip file....${reset}\n"
 	sleep 1
 	cd $PREFIX/share/window
 	7z e Win7.7z
 	printf "${green}Extracted successfull${reset}\n"
 else 
-	printf "${green}window zip file already extracted:${reset}\n"
+	printf "${green}window 7 zip file already extracted:${reset}\n"
 fi
 
 if [ -f $PREFIX/share/window/Win7.7z ]; then
 	echo ""
-	printf "${blue}Do you want delete window xp zip file ${green}[y/n]${reset}\n"
+	printf "${blue}Do you want delete window 7 zip file ${green}[y/n]${reset}\n"
 
 	printf "${blue}Enter${red}:~${green}"
 	read choice 
 	if [ "${choice}" = "y" ]; then
 		echo ""
-		printf "${red}[*]${green}Removing windowxp zip file${reset}\n"
+		printf "${red}[*]${green}Removing window 7 zip file${reset}\n"
 		rm $PREFIX/share/window/Win7.7z
 		echo ""
-		printf "${green}Window xp zipFile removed${reset}\n"
+		printf "${green}Window 7 zip File removed${reset}\n"
 	elif [ "${choice}" = "n" ]; then
 		echo ""
-		printf "${green}Ok windowxp zipfile not remove${reset}\n"
+		printf "${green}Ok window 7 zip file not remove${reset}\n"
 	else 
 		printf "${red}[!]Wrong Input${reset}\n"
 
 	fi
 else
 	echo ""
-	printf "${red}Window zip file not found${reset}"
+	printf "${red}Window 7 zip file not found${reset}"
 
 fi
 
@@ -157,7 +158,7 @@ fi
 
 win_start () {
 
-	printf "${blue}Downloading Window start up file${reset}\n"
+	printf "${blue}Downloading Window 7 start up file${reset}\n"
 	sleep 1
 	cd $PREFIX/bin && curl -LO https://raw.githubusercontent.com/1Tech-X/windowxp/master/win/windowxp && chmod +x windowxp
 	echo ""
@@ -165,7 +166,7 @@ win_start () {
 	progress
 	echo ""
 	printf "${yellow}Now you can start window by executing command${reset}"
-	printf "${green} windowxp${reset}\n"
+	printf "${green} window${reset}\n"
 
 
 
