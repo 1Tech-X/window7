@@ -1,5 +1,5 @@
-# windowxp
-Window xp for android
+# window 7
+Window 7 for android
 
 <img src='https://github.com/1Tech-X/windowxp/blob/master/win/20200806_143658.jpg' width='350'>
 <hr>
@@ -18,7 +18,7 @@ Window xp for android
 
 # Usage
 
-<h5>windowxp</>
+<h5>window</>
 <hr>
 
 <h3>Created by TECH-X</h3>
