@@ -1,5 +1,0 @@
-#!/data/data/com.termux/files/usr/bin/bash
-
-# Window xp startup file
-
-qemu-system-i386 -hda /data/data/com.termux/files/usr/share/window/Win7.qcow2 -vnc 127.0.0.1:1
